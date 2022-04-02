@@ -1,20 +1,20 @@
 package com.rafaelbaetapena.archunit.core.commands;
 
 public class CreateBookCommand {
-    private String name;
+    private String title;
     private String publishingCompany;
 
-    public CreateBookCommand(String name, String publishingCompany) {
-        this.name = name;
+    public CreateBookCommand(String title, String publishingCompany) {
+        this.title = title;
         this.publishingCompany = publishingCompany;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getPublishingCompany() {
