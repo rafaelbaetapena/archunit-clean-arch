@@ -3,20 +3,20 @@ package com.rafaelbaetapena.archunit.entrypoint.rest.input;
 import com.rafaelbaetapena.archunit.core.commands.CreateBookCommand;
 
 public class CreateBookRequest {
-    private String name;
+    private String title;
     private String publishingCompany;
 
-    public CreateBookRequest(String name, String publishingCompany) {
-        this.name = name;
+    public CreateBookRequest(String title, String publishingCompany) {
+        this.title = title;
         this.publishingCompany = publishingCompany;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getPublishingCompany() {
@@ -28,6 +28,6 @@ public class CreateBookRequest {
     }
 
     public CreateBookCommand toCommand(){
-        return new CreateBookCommand(this.name, this.publishingCompany);
+        return new CreateBookCommand(this.title, this.publishingCompany);
     }
 }
