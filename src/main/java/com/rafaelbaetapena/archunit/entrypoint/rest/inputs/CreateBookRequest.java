@@ -1,4 +1,4 @@
-package com.rafaelbaetapena.archunit.entrypoint.rest.input;
+package com.rafaelbaetapena.archunit.entrypoint.rest.inputs;
 
 import com.rafaelbaetapena.archunit.core.commands.CreateBookCommand;
 

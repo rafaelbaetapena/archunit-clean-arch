@@ -1,5 +1,6 @@
-package com.rafaelbaetapena.archunit.gateway.postgres;
+package com.rafaelbaetapena.archunit.gateway.postgres.repositories;
 
+import com.rafaelbaetapena.archunit.gateway.postgres.entities.BookEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

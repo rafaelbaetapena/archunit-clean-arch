@@ -4,8 +4,8 @@ import com.rafaelbaetapena.archunit.core.commands.CreateBookCommand;
 import com.rafaelbaetapena.archunit.core.events.BookCreatedEvent;
 import com.rafaelbaetapena.archunit.core.models.Book;
 import com.rafaelbaetapena.archunit.core.ports.CreateBookPort;
-import com.rafaelbaetapena.archunit.gateway.postgres.BookEntity;
-import com.rafaelbaetapena.archunit.gateway.postgres.BookRepository;
+import com.rafaelbaetapena.archunit.gateway.postgres.entities.BookEntity;
+import com.rafaelbaetapena.archunit.gateway.postgres.repositories.BookRepository;
 import org.springframework.stereotype.Component;
 
 @Component
