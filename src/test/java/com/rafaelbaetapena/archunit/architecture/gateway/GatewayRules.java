@@ -10,6 +10,6 @@ public class GatewayRules {
     public static String deepPackageIdentifier = "..gateway..";
 
     @ArchTest
-    public static final ArchRule noClassesShouldResideInPackageGateway = noClasses()
+    public static final ArchRule noClassesShouldResideInPackage = noClasses()
             .should().resideInAPackage(packageIdentifier);
 }

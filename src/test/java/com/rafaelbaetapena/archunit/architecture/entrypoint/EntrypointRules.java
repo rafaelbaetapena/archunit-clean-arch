@@ -10,6 +10,6 @@ public class EntrypointRules {
     public static String deepPackageIdentifier = "..entrypoint..";
 
     @ArchTest
-    public static final ArchRule noClassesShouldResideInPackageEntrypoint = noClasses()
+    public static final ArchRule noClassesShouldResideInPackage = noClasses()
             .should().resideInAPackage(packageIdentifier);
 }

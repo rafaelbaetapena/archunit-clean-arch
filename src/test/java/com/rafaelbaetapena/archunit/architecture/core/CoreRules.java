@@ -13,11 +13,11 @@ public class CoreRules {
     public static String deepPackageIdentifier = "..core..";
 
     @ArchTest
-    public static final ArchRule noClassesShouldResideInPackageCore = noClasses()
+    public static final ArchRule noClassesShouldResideInPackage = noClasses()
             .should().resideInAPackage(packageIdentifier);
 
     @ArchTest
-    public static final ArchRule classesThatResideInAPackageCoreShouldOnlyDependOnClassesThatResideInCore = classes()
+    public static final ArchRule classesShouldOnlyDependOnClassesThatResideIn = classes()
             .that().resideInAPackage(deepPackageIdentifier)
             .should().onlyDependOnClassesThat().resideInAnyPackage(
                     deepPackageIdentifier,
