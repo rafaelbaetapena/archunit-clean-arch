@@ -1,4 +1,4 @@
-package com.rafaelbaetapena.archunit.entrypoint.rest.outputs;
+package com.rafaelbaetapena.archunit.gateway.entrypoint.rest.outputs;
 
 import com.rafaelbaetapena.archunit.core.models.Book;
 

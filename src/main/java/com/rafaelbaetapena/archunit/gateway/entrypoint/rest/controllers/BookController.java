@@ -1,8 +1,8 @@
-package com.rafaelbaetapena.archunit.entrypoint.rest.controllers;
+package com.rafaelbaetapena.archunit.gateway.entrypoint.rest.controllers;
 
 import com.rafaelbaetapena.archunit.core.usecases.CreateBookUseCase;
-import com.rafaelbaetapena.archunit.entrypoint.rest.inputs.CreateBookRequest;
-import com.rafaelbaetapena.archunit.entrypoint.rest.outputs.BookCreatedResponse;
+import com.rafaelbaetapena.archunit.gateway.entrypoint.rest.inputs.CreateBookRequest;
+import com.rafaelbaetapena.archunit.gateway.entrypoint.rest.outputs.BookCreatedResponse;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

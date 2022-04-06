@@ -1,4 +1,4 @@
-package com.rafaelbaetapena.archunit.gateway.postgres.entities;
+package com.rafaelbaetapena.archunit.gateway.dataproviders.postgres.entities;
 
 import com.rafaelbaetapena.archunit.core.commands.CreateBookCommand;
 import com.rafaelbaetapena.archunit.core.models.Book;
