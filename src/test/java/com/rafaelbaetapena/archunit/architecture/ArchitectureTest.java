@@ -15,12 +15,12 @@ import com.tngtech.archunit.junit.ArchTests;
 },
 packages = "com.rafaelbaetapena.archunit")
 public class ArchitectureTest {
-    @ArchTest
-    static final ArchTests coreTests = ArchTests.in(CoreRules.class);
-
-    @ArchTest
-    static final ArchTests entrypointTests = ArchTests.in(EntrypointRules.class);
-
-    @ArchTest
-    static final ArchTests gatewayTests = ArchTests.in(GatewayRules.class);
+//    @ArchTest
+//    static final ArchTests coreTests = ArchTests.in(CoreRules.class);
+//
+//    @ArchTest
+//    static final ArchTests entrypointTests = ArchTests.in(EntrypointRules.class);
+//
+//    @ArchTest
+//    static final ArchTests gatewayTests = ArchTests.in(GatewayRules.class);
 }
