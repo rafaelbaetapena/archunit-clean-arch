@@ -1,6 +1,6 @@
-package com.rafaelbaetapena.archunit.core.events;
+package com.rafaelbaetapena.archunit.core.domain.events;
 
-import com.rafaelbaetapena.archunit.core.models.Book;
+import com.rafaelbaetapena.archunit.core.domain.models.Book;
 
 import java.util.UUID;
 

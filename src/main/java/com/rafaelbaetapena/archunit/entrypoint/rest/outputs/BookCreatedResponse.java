@@ -1,13 +1,15 @@
-package com.rafaelbaetapena.archunit.core.models;
+package com.rafaelbaetapena.archunit.entrypoint.rest.outputs;
+
+import com.rafaelbaetapena.archunit.core.domain.models.Book;
 
 import java.util.UUID;
 
-public class Book {
+public class BookCreatedResponse {
     private UUID id;
     private String title;
     private String publishingCompany;
 
-    public Book(UUID id, String title, String publishingCompany) {
+    public BookCreatedResponse(UUID id, String title, String publishingCompany) {
         this.id = id;
         this.title = title;
         this.publishingCompany = publishingCompany;
@@ -35,5 +37,13 @@ public class Book {
 
     public void setPublishingCompany(String publishingCompany) {
         this.publishingCompany = publishingCompany;
+    }
+
+    public static BookCreatedResponse fromDomain(Book book) {
+        return new BookCreatedResponse(
+                book.getId(),
+                book.getTitle(),
+                book.getPublishingCompany()
+        );
     }
 }

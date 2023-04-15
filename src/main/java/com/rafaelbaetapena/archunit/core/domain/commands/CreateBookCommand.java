@@ -1,12 +1,10 @@
-package com.rafaelbaetapena.archunit.gateway.entrypoint.rest.inputs;
+package com.rafaelbaetapena.archunit.core.domain.commands;
 
-import com.rafaelbaetapena.archunit.core.commands.CreateBookCommand;
-
-public class CreateBookRequest {
+public class CreateBookCommand {
     private String title;
     private String publishingCompany;
 
-    public CreateBookRequest(String title, String publishingCompany) {
+    public CreateBookCommand(String title, String publishingCompany) {
         this.title = title;
         this.publishingCompany = publishingCompany;
     }
@@ -25,9 +23,5 @@ public class CreateBookRequest {
 
     public void setPublishingCompany(String publishingCompany) {
         this.publishingCompany = publishingCompany;
-    }
-
-    public CreateBookCommand toCommand(){
-        return new CreateBookCommand(this.title, this.publishingCompany);
     }
 }
